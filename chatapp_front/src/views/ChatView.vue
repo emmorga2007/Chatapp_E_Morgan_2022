@@ -13,11 +13,16 @@
         </ul>
       </section>
       <!-- left hand user window end-->
+      <ChatMessage
+        v-for="msg in messages"
+        :key="msg.id"
+        :msg="msg.message"
+      />
       <!--Main chat ui below here -->
       <section id="chat-message-ui">
         <!-- Chat message compoenent here-->
         <section id="text-wrapper">
-          <textarea id="message" placeholder="whats on your mind?"></textarea>
+          <textarea id="message" v-model="message" placeholder="whats on your mind?"></textarea>
           
           <button 
           id="sendMessage"
@@ -33,6 +38,7 @@
 <script>
 import io from "socket.io-client";
 import vars from "@/env.js";
+import ChatMessage from "@/components/ChatMessage.vue";
 
 export default {
   name: "TheChatComponent",
@@ -44,7 +50,7 @@ export default {
   mounted() {
     let vm = this;
 
-    this.socket.on('CONNECTED',(id) =>{
+    this.socket.on("CONNECTED", (id) =>{
       vm.socketID = id;
     })
 
@@ -75,8 +81,14 @@ export default {
 
   methods: {
     sendMessage() {
-      this.socket.emit('SEND_MESSAGE', { user: this.ChatUserName || "Anonymous", message: this.message})
+      this.socket.emit('SEND_MESSAGE', { user: this.ChatUserName || "Anonymous", message: this.message});
+      // empty out the text area and get ready to input a new message.
+      this.message = '';
     }
+  },
+
+  components: {
+    ChatMessage
   }
 }
 </script>
