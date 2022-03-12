@@ -2,7 +2,7 @@
 
 <h2>How to get the 'ole train wreck started</h2>
 
-## Project setup (get the node modules going)
+### Project setup (get the node modules going)
 ```
 npm install
 ```
@@ -18,10 +18,9 @@ npm run serve
 ```
 
 ### How to Use?
-```
-Fristly, open the link npm run serve gives you.
-Secondly, It's a chat app. You chat of course. 
-```
+Fristly, open the link npm run serve gives you. </br>
+Secondly, It's a chat app. You chat of course. </br>
+
 
 ### Built with:
 Vue </br>

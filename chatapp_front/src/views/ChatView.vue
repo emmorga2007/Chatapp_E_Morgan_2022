@@ -16,7 +16,8 @@
       <ChatMessage
         v-for="msg in messages"
         :key="msg.id"
-        :msg="msg.message"
+        :message="msg.message"
+        :username="msg.user"
       />
       <!--Main chat ui below here -->
       <section id="chat-message-ui">
@@ -94,5 +95,5 @@ export default {
 </script>
 
 <style lang="scss">
-  @import "../assets/sass/chat";
+  @import "@/assets/sass/chat.scss";
 </style>

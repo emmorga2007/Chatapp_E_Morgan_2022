@@ -1,7 +1,7 @@
 <template>
     <div class="message-panel">
         <div class="message-wrapper">
-            <h1>Username will show up here eventually</h1>
+            <h1>{{ username }}</h1>
             <p class="msg-text">
                 {{ message }}
             </p>
@@ -15,12 +15,13 @@ export default {
     name:"ChatMessageComponent",
 
     props: {
-        message: String
+        message: String,
+        username: String
     }
 }
 
 </script>
 
 <style lang="scss">
-    @import "../assets/sass/chatmes";
+    @import "@/assets/sass/chatmes.scss";
 </style>

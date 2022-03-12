@@ -1,7 +1,7 @@
 <template>
   <section id="welcome-wrapper">
     <h1 class="hidden">Sign In</h1>
-    <h2>Welcome to the Chat App</h2>
+    <p>Love talking to yourself? Great! Share your thoughts with you, yourself, and omnipresent Kathy.</p>
     <input type="text" name="username" placeholder="Your Name" v-model="username"
 :aria-label="nameLabel">
     <div class="controls">
@@ -44,6 +44,6 @@ export default {
 
 <!-- CSS Style homepage below -->
 <style lang="scss">
-  @import "../assets/sass/home";
-  @import "../assets/sass/reset";
+  @import "@/assets/sass/home.scss";
+  @import "@/assets/sass/reset.scss";
 </style>
