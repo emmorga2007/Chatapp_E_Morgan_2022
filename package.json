@@ -1,0 +1,13 @@
+{
+  "name": "chatapp_e_morgan_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "(cd ChatApp_Back && node app) & cd chatapp_front && npm run serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
