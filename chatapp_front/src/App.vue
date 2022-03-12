@@ -4,9 +4,7 @@
         <h1 class="hidden">Welcome to the Chat App</h1>
         <h2>Chat App with VueCLI, Socket.io, and Express</h2>
       </header>
-      <h4>Below this is dynamic content - the router-view</h4>
       <router-view></router-view>
-      <h4>Above this is dynamic content - the router-view</h4>
     </section>
 </template>
 
