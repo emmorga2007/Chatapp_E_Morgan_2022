@@ -11,22 +11,22 @@
     padding-left: 0.8em;
 }
 
-#chat-users-ui {
+.chat-users-ui {
     border-right: thin solid #333;
 }
 
-#chat-users-ui, #chat-messages-ui {
+.chat-users-ui, .chat-messages-ui {
     padding: 0.8em;
     position: relative;
 }
 
-#chat-users-ui {
+.chat-users-ui {
     h2 { font-size: 1.3em; }
 }
 
-#current-users { margin-top: 1em; }
+.current-users { margin-top: 1em; }
 
-#text-wrapper { position: relative; }
+.text-wrapper { position: relative; }
 
 textarea { 
     width: 70%; 
