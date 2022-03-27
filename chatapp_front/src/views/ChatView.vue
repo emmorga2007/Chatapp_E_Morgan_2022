@@ -7,7 +7,7 @@
       <section>
         <h2>Current Users:</h2>
         <!-- List of users -->
-        <ul id="current-users">
+        <ul class="current-users-ui">
           <!-- this will take a sub component that will render  -->
 
         </ul>
@@ -20,9 +20,9 @@
         :username="msg.user"
       />
       <!--Main chat ui below here -->
-      <section id="chat-message-ui">
+      <section class="chat-message-ui">
         <!-- Chat message compoenent here-->
-        <section id="text-wrapper">
+        <section class="text-wrapper">
           <textarea id="message" v-model="message" placeholder="whats on your mind?"></textarea>
           
           <button 
